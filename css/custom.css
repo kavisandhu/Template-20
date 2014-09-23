@@ -1,0 +1,116 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300);
+
+*{
+	margin:0px; 
+	padding:0px;
+}
+
+@font-face {
+    font-family: 'nixie_oneregular';
+    src: url('../fonts/nixieone-regular_1.eot');
+    src: url('../fonts/nixieone-regular_1.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nixieone-regular_1.woff2') format('woff2'),
+         url('../fonts/nixieone-regular_1.woff') format('woff'),
+         url('../fonts/nixieone-regular_1.ttf') format('truetype'),
+         url('../fonts/nixieone-regular_1.svg#nixie_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.brand{
+	margin-top:20px; 
+	display: inline-block;
+}
+
+body{
+	background:url(../images/bg.jpg) no-repeat center; 
+	/* background-size:cover; */
+	width:100%;
+	height:100%;
+}
+
+.innrWrapper{
+	max-width:590px;
+	width:100%;
+	margin:0 auto;
+}
+
+.innrWrapper h1{
+	font-size:42px;
+	color:#fff;
+	font-family: 'nixie_oneregular';
+}
+
+.innrWrapper h6{
+	font-size:20px;
+	color:#fff;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:600;
+}
+
+.innerBg{
+	background:url(../images/inner-bg.png) no-repeat center; 
+	background-size:480px 532px;
+	display:inline-block;
+	padding:140px 100px 130px;
+	color:#fff;
+	margin-top: 15px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.innerBg h6{	
+	font-weight:600;
+	font-size:18px;
+	text-transform:uppercase;
+}
+
+.innerBg p{
+	font-size:13px;
+	color:#cae2dc;
+}
+
+.marginTop20{
+	margin-top:20px;
+}
+
+.downloadBtn{
+	padding:15px 60px;
+	border-radius: 35px;
+	background:#8bc53b;
+	color:#fff;
+	font-size:19px;
+	font-weight:600;
+	margin-top:20px;
+}
+
+footer{
+	max-width:1008px;
+	margin:20px auto 0;
+	width:100%;
+}
+
+footer p{
+	width:100%;
+	float:left;
+	line-height:30px;
+	background:rgba(255, 255, 255, 0.3);
+	text-transform:uppercase;
+	color:#000;
+	font-weight:700;
+}
+
+
+@media only screen and (max-width:767px){
+	.innrWrapper h1{font-size: 34px;}
+	.innrWrapper h6{font-size: 18px;}
+}
+
+@media only screen and (max-width:481px){
+	.innerBg{padding: 140px 30px 130px;}	
+}
+
+@media only screen and (max-width:360px){
+	.innerBg{padding: 140px 8px 130px;}	
+	footer p {line-height: 20px; padding: 5px;}
+}
